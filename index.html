@@ -17,6 +17,16 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/103743292" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  let source = urlParams.get('utm_source') || document.referrer || 'unknown';
+  ym(103743292, 'reachGoal', 'link_click', {source: source});
+  setTimeout(function() {
+    window.location.href = "https://example.com";
+  }, 1000);
+</script>
+    
 </head>
 <body>
   <p>Переходим на сайт...</p>
