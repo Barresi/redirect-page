@@ -1,34 +1,89 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Переход...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подождите...</title>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103743292', 'ym');
-
-    ym(103743292, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/103743292" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  let source = urlParams.get('utm_source') || document.referrer || 'unknown';
-  ym(103743292, 'reachGoal', 'link_click', {source: source});
-  setTimeout(function() {
-    window.location.href = "https://example.com";
-  }, 1000);
-</script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103743292', 'ym');
     
+        ym(103743292, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103743292" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      let source = urlParams.get('utm_source') || document.referrer || 'unknown';
+      ym(103743292, 'reachGoal', 'link_click', {source: source});
+    </script>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .error-img {
+            max-width: 250px;
+            margin: 30px auto;
+            display: block;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-  <p>Переходим на сайт...</p>
+    <div class="container">
+        <img class="error-img" src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" alt="Ошибка сервиса">
+        <h1>Сервис временно недоступен</h1>
+        <p>Извините, в данный момент мы работаем над устранением неполадок.  
+        Пожалуйста, попробуйте зайти позже.</p>
+        <a href="#" class="btn">Обновить страницу</a>
+        <footer>© 2025 Все права защищены</footer>
+    </div>
 </body>
 </html>
+
